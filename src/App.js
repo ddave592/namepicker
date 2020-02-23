@@ -140,12 +140,16 @@ function App() {
           </Box>
         </Card>
 
-        {pickedName && (
+        <Box textAlign="center" flexDirection="column" display="flex" my={3}>
+          {pickedName && (
             <>
-              Result:{" "}
+              Result:{" "} <br />
               <Chip label={pickedName} size="medium" variant="default" />
             </>
           )}
+        </Box>
+
+
       </Container>
     </>
   );
