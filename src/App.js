@@ -120,6 +120,7 @@ function App() {
               aria-label="outlined primary button group"
             >
               <Button
+                {...{ disabled: nameList.length <= 1 }}
                 m={2}
                 variant="contained"
                 disableElevation
@@ -129,6 +130,7 @@ function App() {
                 {pickedName ? "Reroll" : "Roll"}
               </Button>
               <Button
+                {...{ disabled: nameList.length <= 1 }}
                 variant="outlined"
                 disableElevation
                 // style={{ alignSelf: "flex-start" }}
@@ -143,8 +145,8 @@ function App() {
         <Box textAlign="center" flexDirection="column" display="flex" my={3}>
           {pickedName && (
             <>
-              Result:{" "} <br />
-              <Chip label={pickedName} size="medium" variant="default" />
+              <strong>Result:</strong><br />
+              <Chip label={pickedName[0].toUpperCase() + pickedName.slice(1)} size="medium" variant="default" />
             </>
           )}
         </Box>
