@@ -14,8 +14,8 @@ it should fit the following criteria:
 - [x] add added name to list with `X` button as a option to remove the entry
 - [x] add button to randomly select name from list then cross out that name (so it can't be selected again)
 - [x] add reset button for list
-- [] showcase this in a modal view with usual `X` type button to close view
-    - [] closing modal should reset crossed out list items
+- ~~[] showcase this in a modal view with usual `X` type button to close view~~
+    - ~~[] closing modal should reset crossed out list items~~
 
 ## EXTRA TO DO (fun bits):
 
